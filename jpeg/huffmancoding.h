@@ -39,6 +39,7 @@ public:
     long getLowestFreq(vector<HuffmanSymbols> &e, long indexToSkip = -1);
     void generateCodeLengths(vector<HuffmanSymbols> &e);
     void generateInitialList(vector<HuffmanSymbols> &e);
+    void generateCodes(HuffmanSymbol &simbols);
     void generateCodes();
 };
 
