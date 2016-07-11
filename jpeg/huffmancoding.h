@@ -2,6 +2,7 @@
 #define HUFFMANCODING_H
 
 #include<vector>
+#include <string>
 
 using namespace std;
 
@@ -10,13 +11,17 @@ public:
     char symbol;
     int codeLength;
     HuffmanSymbol(char symbol, int codeLenght);
+    string toStr();
+
 };
 
-class NodeList{
+class HuffmanSymbols{
 public:
-    NodeList();
+    HuffmanSymbols();
     std::vector<HuffmanSymbol> nodes;
     unsigned int frequency;
+
+    string toStr();
 };
 
 class HuffmanCoding
@@ -25,12 +30,15 @@ private:
     vector<char> symbols;
     vector<int> frequencies;
 
-    void generateInitialList(vector<NodeList> &e);
+
 public:
 
     HuffmanCoding(vector<char> symbols, vector<int> frequencies);
 
-
+    vector<long> getTwoLowestFreq(vector<HuffmanSymbols> &e);
+    long getLowestFreq(vector<HuffmanSymbols> &e, long indexToSkip = -1);
+    void generateCodeLengths(vector<HuffmanSymbols> &e);
+    void generateInitialList(vector<HuffmanSymbols> &e);
     void generateCodes();
 };
 
