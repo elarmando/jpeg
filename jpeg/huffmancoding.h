@@ -10,6 +10,7 @@ class HuffmanSymbol{
 public:
     char symbol;
     int codeLength;
+    int code;
     HuffmanSymbol(char symbol, int codeLenght);
     string toStr();
 
@@ -38,6 +39,7 @@ public:
     vector<long> getTwoLowestFreq(vector<HuffmanSymbols> &e);
     long getLowestFreq(vector<HuffmanSymbols> &e, long indexToSkip = -1);
     void generateCodeLengths(vector<HuffmanSymbols> &e);
+    void generateCodes(vector<HuffmanSymbol> &, bool order = true);
     void generateInitialList(vector<HuffmanSymbols> &e);
     void generateCodes(HuffmanSymbol &simbols);
     void generateCodes();

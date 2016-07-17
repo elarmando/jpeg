@@ -3,10 +3,13 @@
 #include <sstream>
 #include <iostream>
 #include <limits>
+#include <algorithm>
 
 HuffmanSymbol::HuffmanSymbol(char _symbol, int _codeLength):
+
 symbol(_symbol),
-codeLength(_codeLength)
+codeLength(_codeLength),
+code(0)
 {
 
 }
@@ -136,6 +139,39 @@ void HuffmanCoding::generateCodeLengths(vector<HuffmanSymbols> &e)
 
         //removes second of the list
         e.erase(e.begin() + indexes[1]);
+
+    }
+
+}
+
+void HuffmanCoding::generateCodes(vector<HuffmanSymbol> &codelen, bool order )
+{
+
+    if(order == true){
+        std::sort(codelen.begin(), codelen.end(),
+                  [](const HuffmanSymbol &e, const HuffmanSymbol &e2){
+                    return e.codeLength < e2.codeLength;
+        });
+    }
+
+
+    size_t index = 0, len = codelen.size();
+    int huffmancodecounter = 0;
+    int codelengthcounter = 1;
+
+    while(index < len){
+        HuffmanSymbol &symbol = codelen[index];
+
+        if(symbol.codeLength == codelengthcounter){
+            symbol.code = huffmancodecounter;
+            huffmancodecounter++;
+            index++;
+
+        }else{
+            huffmancodecounter = huffmancodecounter << 1;
+            codelengthcounter++;
+        }
+
 
     }
 
