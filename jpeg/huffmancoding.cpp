@@ -57,6 +57,11 @@ void HuffmanCoding::generateInitialList(vector<HuffmanSymbols> &lista)
 
 }
 
+void HuffmanCoding::generateCodes(HuffmanSymbol &simbols)
+{
+
+}
+
 HuffmanCoding::HuffmanCoding(vector<char> _symbols, vector<int> _frequencies):
 symbols(_symbols),
 frequencies(_frequencies)
