@@ -5,11 +5,13 @@ CONFIG -= qt
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    huffmancoding.cpp
+    huffmancoding.cpp \
+    jpegmarker.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    huffmancoding.h
+    huffmancoding.h \
+    jpegmarker.h
 
