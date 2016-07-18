@@ -6,12 +6,14 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     huffmancoding.cpp \
-    jpegmarker.cpp
+    jpegmarker.cpp \
+    jfifreader.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
     huffmancoding.h \
-    jpegmarker.h
+    jpegmarker.h \
+    jfifreader.h
 

@@ -8,9 +8,11 @@ class JpegMarker
 public:
     JpegMarker();
 
-    static uint2 SOI = 0xFFD8;//start of image
-    static uint2 EOI = 0xFFD9;//END OF IMAGE
-    static uint2 APP0 = 0xFFE0;//Application marker
+    const static uint2 SOI = 0xFFD8;//start of image
+    const static uint2 EOI = 0xFFD9;//END OF IMAGE
+    const static uint2 APP0 = 0xFFE0;//Application marker
+
+
 
 };
 

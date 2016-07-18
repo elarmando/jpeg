@@ -1,10 +1,14 @@
+
 #include <iostream>
-#include "huffmancoding.h"
 #include <vector>
 #include <iterator>
 #include <algorithm>
 #include <bitset>
 #include <sstream>
+
+#include "huffmancoding.h"
+#include "jfifreader.h"
+
 
 using namespace std;
 
@@ -108,6 +112,14 @@ void testGetLowest(){
     });
 }
 
+void testReadHeader(){
+    std::string pathImage("test.jpg");
+   // JfifReader reader(pathImage);
+
+    //reader.readHeader();
+
+}
+
 int main()
 {
    //testInitialList();
@@ -116,8 +128,9 @@ int main()
 
     //testGenerateCodeLengths();
 
-    testGenerateCodes();
+   // testGenerateCodes();
 
+    testReadHeader();
     return 0;
 }
 
