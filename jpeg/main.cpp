@@ -6,122 +6,126 @@
 #include <bitset>
 #include <sstream>
 
-#include "huffmancoding.h"
-#include "jfifreader.h"
+#include<jfifreader.h>
 
 
-using namespace std;
-
-void testGenerateCodes(){
-    char symbols[] = {'A', 'C' , 'L', 'M', 'N', 'P', '_', '.'};
-    int frequencies[] = {10, 1, 2, 2,4,   2,  6,     1};
-
-    vector<char> vsymbols(symbols, std::end(symbols) );
-    vector<int> vfrequencies(frequencies, std::end(frequencies));
-
-    HuffmanCoding codec(vsymbols, vfrequencies);
-
-    vector<HuffmanSymbols> simbols;
-    codec.generateInitialList(simbols);
-
-    codec.generateCodeLengths(simbols);
-
-    HuffmanSymbols &fila = simbols.front();
-
-    vector<HuffmanSymbol> &sbls = fila.nodes;
-
-    codec.generateCodes(sbls);
-
-    stringstream stream;
-
-    for(auto ite = sbls.begin(); ite != sbls.end(); ite++){
-        HuffmanSymbol &symbol = *ite;
-        std::bitset<32> binary(symbol.code);
-
-        stream<<"simbolo " << symbol.symbol << " codelength " << symbol.codeLength <<"binario " <<binary<<'\n';
-    }
-
-    std::cout<<stream.str();
 
 
-}
 
-void testGenerateCodeLengths(){
-    char symbols[] = {'A', 'C' , 'L', 'M', 'N', 'P', '_', '.'};
-    int frequencies[] = {10, 1, 2, 2,4,   2,  6,     1};
+//void testGenerateCodes(){
+//    char symbols[] = {'A', 'C' , 'L', 'M', 'N', 'P', '_', '.'};
+//    int frequencies[] = {10, 1, 2, 2,4,   2,  6,     1};
 
-    vector<char> vsymbols(symbols, std::end(symbols) );
-    vector<int> vfrequencies(frequencies, std::end(frequencies));
+//    vector<char> vsymbols(symbols, std::end(symbols) );
+//    vector<int> vfrequencies(frequencies, std::end(frequencies));
 
-    HuffmanCoding codec(vsymbols, vfrequencies);
+//    HuffmanCoding codec(vsymbols, vfrequencies);
 
-    vector<HuffmanSymbols> simbols;
+//    vector<HuffmanSymbols> simbols;
+//    codec.generateInitialList(simbols);
 
-    codec.generateInitialList(simbols);
+//    codec.generateCodeLengths(simbols);
 
-    codec.generateCodeLengths(simbols);
+//    HuffmanSymbols &fila = simbols.front();
 
-    HuffmanSymbols &fila = simbols.front();
+//    vector<HuffmanSymbol> &sbls = fila.nodes;
 
-    std::string str = fila.toStr();
-    std::cout<<str<<'\n';
-}
+//    codec.generateCodes(sbls);
 
-void testInitialList(){
-    char symbols[] = {'a', 'b' , 'c'};
-    int frequencies[] = {1, 0, 1};
+//    stringstream stream;
 
-    vector<char> vsymbols(symbols, std::end(symbols) );
-    vector<int> vfrequencies(frequencies, std::end(frequencies));
+//    for(auto ite = sbls.begin(); ite != sbls.end(); ite++){
+//        HuffmanSymbol &symbol = *ite;
+//        std::bitset<32> binary(symbol.code);
 
-    HuffmanCoding algo(vsymbols, vfrequencies);
+//        stream<<"simbolo " << symbol.symbol << " codelength " << symbol.codeLength <<"binario " <<binary<<'\n';
+//    }
 
-    vector<HuffmanSymbols> list;
-
-    algo.generateInitialList(list);
-
-    auto ite = list.begin();
-
-    while(ite != list.end()){
-        HuffmanSymbols &node = *ite;
-
-        std::cout<<node.toStr()<<'\n';
-
-        ite++;
-    }
+//    std::cout<<stream.str();
 
 
-}
+//}
 
-void testGetLowest(){
-    char symbols[] = {'A', 'C' , 'L', 'M', 'N', 'P', '_', '.'};
-    int frequencies[] = {10, 1, 2, 2,4,   2,  6,     1};
+//void testGenerateCodeLengths(){
+//    char symbols[] = {'A', 'C' , 'L', 'M', 'N', 'P', '_', '.'};
+//    int frequencies[] = {10, 1, 2, 2,4,   2,  6,     1};
 
-    vector<char> vsymbols(symbols, std::end(symbols) );
-    vector<int> vfrequencies(frequencies, std::end(frequencies));
+//    vector<char> vsymbols(symbols, std::end(symbols) );
+//    vector<int> vfrequencies(frequencies, std::end(frequencies));
 
-    HuffmanCoding codec(vsymbols, vfrequencies);
+//    HuffmanCoding codec(vsymbols, vfrequencies);
 
-    vector<HuffmanSymbols> simbols;
+//    vector<HuffmanSymbols> simbols;
 
-    codec.generateInitialList(simbols);
-    vector<long> lowest = codec.getTwoLowestFreq(simbols);
+//    codec.generateInitialList(simbols);
 
-    std::for_each(lowest.begin(), lowest.end(), [](long &num){
-       std::cout<<num<<'/n';
-    });
-}
+//    codec.generateCodeLengths(simbols);
+
+//    HuffmanSymbols &fila = simbols.front();
+
+//    std::string str = fila.toStr();
+//    std::cout<<str<<'\n';
+//}
+
+//void testInitialList(){
+//    char symbols[] = {'a', 'b' , 'c'};
+//    int frequencies[] = {1, 0, 1};
+
+//    vector<char> vsymbols(symbols, std::end(symbols) );
+//    vector<int> vfrequencies(frequencies, std::end(frequencies));
+
+//    HuffmanCoding algo(vsymbols, vfrequencies);
+
+//    vector<HuffmanSymbols> list;
+
+//    algo.generateInitialList(list);
+
+//    auto ite = list.begin();
+
+//    while(ite != list.end()){
+//        HuffmanSymbols &node = *ite;
+
+//        std::cout<<node.toStr()<<'\n';
+
+//        ite++;
+//    }
+
+
+//}
+
+//void testGetLowest(){
+//    char symbols[] = {'A', 'C' , 'L', 'M', 'N', 'P', '_', '.'};
+//    int frequencies[] = {10, 1, 2, 2,4,   2,  6,     1};
+
+//    vector<char> vsymbols(symbols, std::end(symbols) );
+//    vector<int> vfrequencies(frequencies, std::end(frequencies));
+
+//    HuffmanCoding codec(vsymbols, vfrequencies);
+
+//    vector<HuffmanSymbols> simbols;
+
+//    codec.generateInitialList(simbols);
+//    vector<long> lowest = codec.getTwoLowestFreq(simbols);
+
+//    std::for_each(lowest.begin(), lowest.end(), [](long &num){
+//       std::cout<<num<<'/n';
+//    });
+//}
 
 void testReadHeader(){
     std::string pathImage("test.jpg");
-   // JfifReader reader(pathImage);
 
-    //reader.readHeader();
+    JfifReader reader(pathImage);
+
+    reader.readHeader();
 
 }
 
+
+
 int main()
 {
+
    //testInitialList();
 
     //testGetLowest();

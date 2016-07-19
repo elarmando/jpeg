@@ -1,9 +1,12 @@
 #include "jfifreader.h"
+
 #include <iostream>
 #include <fstream>
 
-JfifReader::JfifReader(const char *str):
-    pathFile(str)
+
+
+JfifReader::JfifReader(const std::string &a):
+    pathFile(a)
 {
 
 }
