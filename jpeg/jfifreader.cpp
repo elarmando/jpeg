@@ -8,14 +8,12 @@
 JfifReader::JfifReader(const std::string &a):
     pathFile(a)
 {
-    thumbnail =  nullptr;
+
 }
 
 JfifReader::~JfifReader()
 {
-    if(thumbnail){
-        delete []thumbnail;
-    }
+
 }
 
 void JfifReader::validateFile(istream &stream)
@@ -65,6 +63,21 @@ void JfifReader::readHeader()
     versionMajorId = (char)((marker & 0xFF00)>>8);
     versionMinorId = (char)(unsigned char)(marker & 0x00FF);
 
+
+    stream.read(&units, 1);
+
+    read2bytes(stream, xDensity);
+    read2bytes(stream, yDensity);
+
+    stream.read(&xThumbnail, 1);
+    stream.read(&yThumbnail, 1);
+
+    long int size = 3*((int)xThumbnail) * ((int)yThumbnail);
+
+    if(size > 0){
+        thumbnail.resize(size);
+        stream.read(&thumbnail[0], size);
+    }
 
 }
 

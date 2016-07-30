@@ -5,7 +5,7 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-
+#include <vector>
 
 
 using namespace std;
@@ -25,7 +25,8 @@ private:
     char xThumbnail;
     char yThumbnail;
 
-    char *thumbnail;
+    std::vector<char> thumbnail;
+
 
 
 
