@@ -22,13 +22,13 @@ void JfifReader::validateFile(istream &stream)
     read2bytes(stream, marker);
 
     if(marker != JpegMarker::SOI)
-        std::logic_error("No jfif file in header");
+        throw std::logic_error("No jfif file in header");
 
 
     read2bytes(stream, marker);
 
     if(marker != JpegMarker::APP0)
-        std::logic_error("No app0 marker in header");
+        throw std::logic_error("No app0 marker in header");
 
     read2bytes(stream, marker);
 
@@ -37,11 +37,11 @@ void JfifReader::validateFile(istream &stream)
     stream.read(jfifstring, 5);
 
     if(stream.gcount() < 5)
-         std::logic_error("No jfif string in header");
+         throw std::logic_error("No jfif string in header");
 
     if(jfifstring[0] != 'J' || jfifstring[1] != 'F' ||
        jfifstring[2] != 'I' ||  jfifstring[3] != 'F' ||  jfifstring[4] != 0)
-         std::logic_error("No jfif string in header");
+         throw std::logic_error("No jfif string in header");
 
 
 }
@@ -49,6 +49,11 @@ void JfifReader::validateFile(istream &stream)
 void JfifReader::readHeader()
 {
     std::ifstream stream(pathFile.c_str(), std::ios::binary);
+    stream.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+
+    if(!stream.good())
+        throw std::logic_error("could not open file");
+
     this->validateFile(stream);
 
     uint2 marker;

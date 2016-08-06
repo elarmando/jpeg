@@ -115,9 +115,17 @@
 void testReadHeader(){
     std::string pathImage("test.jpg");
 
-    JfifReader reader(pathImage);
+    try{
+        JfifReader reader(pathImage);
 
-    reader.readHeader();
+        reader.readHeader();
+
+    }catch (std::system_error& e) {
+        std::cerr << e.code().message() << std::endl;
+    }catch(std::exception &e){
+        std::cout<<e.what();
+    }
+
 
 }
 
