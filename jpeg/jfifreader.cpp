@@ -5,9 +5,86 @@
 #include <stdexcept>
 
 
-JfifReader::JfifReader(const std::string &a):
-    pathFile(a)
+DQT::DQT(){
+
+}
+
+void JfifReader::skipAppMarkers()
 {
+    uint2 marker = 0;
+    uint2 length = 0;
+
+    read2bytes(_stream, marker);
+
+    while(JpegMarker::isAPP(marker)){
+
+
+        read2bytes(_stream, length);
+
+        length -=2;
+       //  std::cout<<"pos "<< _stream.tellg();
+       // std::cout<<" marker "<<hex<<marker;
+        //std::cout<<" lenght "<<dec<<length<<'\n';
+
+
+        _stream.seekg( length, std::ios_base::cur);
+
+
+
+
+        read2bytes(_stream, marker);
+
+    }
+
+    _stream.seekg(-2, std::ios::cur);
+}
+
+void JfifReader::readDQT()
+{
+    uint2 marker = 0;
+
+    read2bytes(_stream, marker);
+
+    if(JpegMarker::DQT != marker)
+        return;
+
+
+    char byte, identifier, size;
+    int tableLength = 0;
+
+    _stream.read(&byte, 1);
+
+    identifier = 0x0F & byte;
+    size = (0xF0 & byte)>>4;
+
+    if(size == 0){
+        size = 1;
+        tableLength = 64;
+    }
+    else{
+        size = 2;
+        tableLength = 128;
+    }
+
+
+    _dqt.table.resize(tableLength);
+
+    _stream.read(&_dqt.table[0], tableLength);
+
+    _dqt.identifier = 0x0F & byte;
+    _dqt.size = size;
+
+
+
+
+
+}
+
+JfifReader::JfifReader(const std::string &a):
+    pathFile(a),
+    _stream(pathFile.c_str(), std::ios::binary)
+{
+    _stream.exceptions(std::ifstream::failbit | std::ifstream::badbit);
 
 }
 
@@ -46,10 +123,22 @@ void JfifReader::validateFile(istream &stream)
 
 }
 
+void JfifReader::read()
+{
+    this->readHeader();
+    this->skipAppMarkers();
+    this->readDQT();
+
+}
+
+
+
 void JfifReader::readHeader()
 {
-    std::ifstream stream(pathFile.c_str(), std::ios::binary);
-    stream.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+    //std::ifstream stream(pathFile.c_str(), std::ios::binary);
+
+    std::istream &stream = _stream;
+
 
     if(!stream.good())
         throw std::logic_error("could not open file");
@@ -84,6 +173,21 @@ void JfifReader::readHeader()
         stream.read(&thumbnail[0], size);
     }
 
+
+
+}
+
+
+
+void JfifReader::readTable()
+{
+    uint2 twobytes = 0;
+
+    read2bytes(_stream, twobytes);
+
+    if(JpegMarker::DHT == twobytes){
+        std::cout<<"Read tables";
+    }
 }
 
 void JfifReader::read2bytes(istream &stream, uint2 &outbytes)
