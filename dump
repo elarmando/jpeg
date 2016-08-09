@@ -1,0 +1,992 @@
+Offset 0x0000 Marker 0xffd8 SOI Start of Image 
+Offset 0x0002 Marker 0xffe0 APP0 Reserved for Application Use length variable 0x10 
+	JPEG_APP0_JFIF_Parameters:
+		 Version = 0x101
+		 Units for the X and Y densities = 0
+		 Horizontal pixel density = 1
+		 Vertical pixel density = 1
+		 Thumbnail horizontal pixel count = 0
+		 Thumbnail vertical pixel count = 0
+
+Offset 0x0014 Marker 0xffe5 APP5 Reserved for Application Use length variable 0x4e 
+Offset 0x0064 Marker 0xffe1 APP1 Reserved for Application Use length variable 0x119b 
+Offset 0x1201 Marker 0xffed APPD Reserved for Application Use length variable 0x8da 
+Offset 0x1add Marker 0xffe1 APP1 Reserved for Application Use length variable 0x75a 
+Offset 0x2239 Marker 0xffdb DQT Define Quantization Table(s) length variable 0x43 
+	JPEG_DQT_Parameters:
+		 QuantizationTableElementPrecision = 0
+		 QuantizationTableIdentifier = 0
+			 QuantizationTableElement 0 = 2
+			 QuantizationTableElement 1 = 2
+			 QuantizationTableElement 2 = 2
+			 QuantizationTableElement 3 = 2
+			 QuantizationTableElement 4 = 2
+			 QuantizationTableElement 5 = 2
+			 QuantizationTableElement 6 = 2
+			 QuantizationTableElement 7 = 2
+			 QuantizationTableElement 8 = 2
+			 QuantizationTableElement 9 = 2
+			 QuantizationTableElement 10 = 3
+			 QuantizationTableElement 11 = 2
+			 QuantizationTableElement 12 = 2
+			 QuantizationTableElement 13 = 2
+			 QuantizationTableElement 14 = 3
+			 QuantizationTableElement 15 = 4
+			 QuantizationTableElement 16 = 3
+			 QuantizationTableElement 17 = 2
+			 QuantizationTableElement 18 = 2
+			 QuantizationTableElement 19 = 3
+			 QuantizationTableElement 20 = 4
+			 QuantizationTableElement 21 = 5
+			 QuantizationTableElement 22 = 4
+			 QuantizationTableElement 23 = 4
+			 QuantizationTableElement 24 = 4
+			 QuantizationTableElement 25 = 4
+			 QuantizationTableElement 26 = 4
+			 QuantizationTableElement 27 = 5
+			 QuantizationTableElement 28 = 6
+			 QuantizationTableElement 29 = 5
+			 QuantizationTableElement 30 = 5
+			 QuantizationTableElement 31 = 5
+			 QuantizationTableElement 32 = 5
+			 QuantizationTableElement 33 = 5
+			 QuantizationTableElement 34 = 5
+			 QuantizationTableElement 35 = 6
+			 QuantizationTableElement 36 = 6
+			 QuantizationTableElement 37 = 7
+			 QuantizationTableElement 38 = 7
+			 QuantizationTableElement 39 = 8
+			 QuantizationTableElement 40 = 7
+			 QuantizationTableElement 41 = 7
+			 QuantizationTableElement 42 = 6
+			 QuantizationTableElement 43 = 9
+			 QuantizationTableElement 44 = 9
+			 QuantizationTableElement 45 = 10
+			 QuantizationTableElement 46 = 10
+			 QuantizationTableElement 47 = 9
+			 QuantizationTableElement 48 = 9
+			 QuantizationTableElement 49 = 12
+			 QuantizationTableElement 50 = 12
+			 QuantizationTableElement 51 = 12
+			 QuantizationTableElement 52 = 12
+			 QuantizationTableElement 53 = 12
+			 QuantizationTableElement 54 = 12
+			 QuantizationTableElement 55 = 12
+			 QuantizationTableElement 56 = 12
+			 QuantizationTableElement 57 = 12
+			 QuantizationTableElement 58 = 12
+			 QuantizationTableElement 59 = 12
+			 QuantizationTableElement 60 = 12
+			 QuantizationTableElement 61 = 12
+			 QuantizationTableElement 62 = 12
+			 QuantizationTableElement 63 = 12
+
+Offset 0x227e Marker 0xffdb DQT Define Quantization Table(s) length variable 0x43 
+	JPEG_DQT_Parameters:
+		 QuantizationTableElementPrecision = 0
+		 QuantizationTableIdentifier = 1
+			 QuantizationTableElement 0 = 3
+			 QuantizationTableElement 1 = 3
+			 QuantizationTableElement 2 = 3
+			 QuantizationTableElement 3 = 5
+			 QuantizationTableElement 4 = 4
+			 QuantizationTableElement 5 = 5
+			 QuantizationTableElement 6 = 9
+			 QuantizationTableElement 7 = 6
+			 QuantizationTableElement 8 = 6
+			 QuantizationTableElement 9 = 9
+			 QuantizationTableElement 10 = 13
+			 QuantizationTableElement 11 = 10
+			 QuantizationTableElement 12 = 9
+			 QuantizationTableElement 13 = 10
+			 QuantizationTableElement 14 = 13
+			 QuantizationTableElement 15 = 15
+			 QuantizationTableElement 16 = 14
+			 QuantizationTableElement 17 = 14
+			 QuantizationTableElement 18 = 14
+			 QuantizationTableElement 19 = 14
+			 QuantizationTableElement 20 = 15
+			 QuantizationTableElement 21 = 15
+			 QuantizationTableElement 22 = 12
+			 QuantizationTableElement 23 = 12
+			 QuantizationTableElement 24 = 12
+			 QuantizationTableElement 25 = 12
+			 QuantizationTableElement 26 = 12
+			 QuantizationTableElement 27 = 15
+			 QuantizationTableElement 28 = 15
+			 QuantizationTableElement 29 = 12
+			 QuantizationTableElement 30 = 12
+			 QuantizationTableElement 31 = 12
+			 QuantizationTableElement 32 = 12
+			 QuantizationTableElement 33 = 12
+			 QuantizationTableElement 34 = 12
+			 QuantizationTableElement 35 = 15
+			 QuantizationTableElement 36 = 12
+			 QuantizationTableElement 37 = 12
+			 QuantizationTableElement 38 = 12
+			 QuantizationTableElement 39 = 12
+			 QuantizationTableElement 40 = 12
+			 QuantizationTableElement 41 = 12
+			 QuantizationTableElement 42 = 12
+			 QuantizationTableElement 43 = 12
+			 QuantizationTableElement 44 = 12
+			 QuantizationTableElement 45 = 12
+			 QuantizationTableElement 46 = 12
+			 QuantizationTableElement 47 = 12
+			 QuantizationTableElement 48 = 12
+			 QuantizationTableElement 49 = 12
+			 QuantizationTableElement 50 = 12
+			 QuantizationTableElement 51 = 12
+			 QuantizationTableElement 52 = 12
+			 QuantizationTableElement 53 = 12
+			 QuantizationTableElement 54 = 12
+			 QuantizationTableElement 55 = 12
+			 QuantizationTableElement 56 = 12
+			 QuantizationTableElement 57 = 12
+			 QuantizationTableElement 58 = 12
+			 QuantizationTableElement 59 = 12
+			 QuantizationTableElement 60 = 12
+			 QuantizationTableElement 61 = 12
+			 QuantizationTableElement 62 = 12
+			 QuantizationTableElement 63 = 12
+
+Offset 0x22c3 Marker 0xffc0 SOF0 Huffman Baseline DCT length variable 0x11 
+	JPEG_SOF_Parameters:
+		 SamplePrecision = 8
+		 nLines = 576
+		 nSamplesPerLine = 1024
+		 nComponentsInFrame = 3
+		 component 0
+			 ComponentIdentifier = 1
+			 HorizontalSamplingFactor = 1
+			 VerticalSamplingFactor = 1
+			 QuantizationTableDestinationSelector = 0
+		 component 1
+			 ComponentIdentifier = 2
+			 HorizontalSamplingFactor = 1
+			 VerticalSamplingFactor = 1
+			 QuantizationTableDestinationSelector = 1
+		 component 2
+			 ComponentIdentifier = 3
+			 HorizontalSamplingFactor = 1
+			 VerticalSamplingFactor = 1
+			 QuantizationTableDestinationSelector = 1
+
+Offset 0x22d6 Marker 0xffc4 DHT Define Huffman Table(s) length variable 0x1f 
+	JPEG_DHT_Parameters:
+		 TableClass = 0
+		 HuffmanTableIdentifier = 0
+			 nHuffmanCodesOfLength 0 = 0
+			 nHuffmanCodesOfLength 1 = 1
+				 ValueOfHuffmanCode 0 = 0
+			 nHuffmanCodesOfLength 2 = 5
+				 ValueOfHuffmanCode 0 = 1
+				 ValueOfHuffmanCode 1 = 2
+				 ValueOfHuffmanCode 2 = 3
+				 ValueOfHuffmanCode 3 = 4
+				 ValueOfHuffmanCode 4 = 5
+			 nHuffmanCodesOfLength 3 = 1
+				 ValueOfHuffmanCode 0 = 6
+			 nHuffmanCodesOfLength 4 = 1
+				 ValueOfHuffmanCode 0 = 7
+			 nHuffmanCodesOfLength 5 = 1
+				 ValueOfHuffmanCode 0 = 8
+			 nHuffmanCodesOfLength 6 = 1
+				 ValueOfHuffmanCode 0 = 9
+			 nHuffmanCodesOfLength 7 = 1
+				 ValueOfHuffmanCode 0 = 10
+			 nHuffmanCodesOfLength 8 = 1
+				 ValueOfHuffmanCode 0 = 11
+			 nHuffmanCodesOfLength 9 = 0
+			 nHuffmanCodesOfLength 10 = 0
+			 nHuffmanCodesOfLength 11 = 0
+			 nHuffmanCodesOfLength 12 = 0
+			 nHuffmanCodesOfLength 13 = 0
+			 nHuffmanCodesOfLength 14 = 0
+			 nHuffmanCodesOfLength 15 = 0
+
+Offset 0x22f7 Marker 0xffc4 DHT Define Huffman Table(s) length variable 0xb5 
+	JPEG_DHT_Parameters:
+		 TableClass = 1
+		 HuffmanTableIdentifier = 0
+			 nHuffmanCodesOfLength 0 = 0
+			 nHuffmanCodesOfLength 1 = 2
+				 ValueOfHuffmanCode 0 = 1
+				 ValueOfHuffmanCode 1 = 2
+			 nHuffmanCodesOfLength 2 = 1
+				 ValueOfHuffmanCode 0 = 3
+			 nHuffmanCodesOfLength 3 = 3
+				 ValueOfHuffmanCode 0 = 0
+				 ValueOfHuffmanCode 1 = 4
+				 ValueOfHuffmanCode 2 = 17
+			 nHuffmanCodesOfLength 4 = 3
+				 ValueOfHuffmanCode 0 = 5
+				 ValueOfHuffmanCode 1 = 18
+				 ValueOfHuffmanCode 2 = 33
+			 nHuffmanCodesOfLength 5 = 2
+				 ValueOfHuffmanCode 0 = 49
+				 ValueOfHuffmanCode 1 = 65
+			 nHuffmanCodesOfLength 6 = 4
+				 ValueOfHuffmanCode 0 = 6
+				 ValueOfHuffmanCode 1 = 19
+				 ValueOfHuffmanCode 2 = 81
+				 ValueOfHuffmanCode 3 = 97
+			 nHuffmanCodesOfLength 7 = 3
+				 ValueOfHuffmanCode 0 = 7
+				 ValueOfHuffmanCode 1 = 34
+				 ValueOfHuffmanCode 2 = 113
+			 nHuffmanCodesOfLength 8 = 5
+				 ValueOfHuffmanCode 0 = 20
+				 ValueOfHuffmanCode 1 = 50
+				 ValueOfHuffmanCode 2 = 129
+				 ValueOfHuffmanCode 3 = 145
+				 ValueOfHuffmanCode 4 = 161
+			 nHuffmanCodesOfLength 9 = 5
+				 ValueOfHuffmanCode 0 = 8
+				 ValueOfHuffmanCode 1 = 35
+				 ValueOfHuffmanCode 2 = 66
+				 ValueOfHuffmanCode 3 = 177
+				 ValueOfHuffmanCode 4 = 193
+			 nHuffmanCodesOfLength 10 = 4
+				 ValueOfHuffmanCode 0 = 21
+				 ValueOfHuffmanCode 1 = 82
+				 ValueOfHuffmanCode 2 = 209
+				 ValueOfHuffmanCode 3 = 240
+			 nHuffmanCodesOfLength 11 = 4
+				 ValueOfHuffmanCode 0 = 36
+				 ValueOfHuffmanCode 1 = 51
+				 ValueOfHuffmanCode 2 = 98
+				 ValueOfHuffmanCode 3 = 114
+			 nHuffmanCodesOfLength 12 = 0
+			 nHuffmanCodesOfLength 13 = 0
+			 nHuffmanCodesOfLength 14 = 1
+				 ValueOfHuffmanCode 0 = 130
+			 nHuffmanCodesOfLength 15 = 125
+				 ValueOfHuffmanCode 0 = 9
+				 ValueOfHuffmanCode 1 = 10
+				 ValueOfHuffmanCode 2 = 22
+				 ValueOfHuffmanCode 3 = 23
+				 ValueOfHuffmanCode 4 = 24
+				 ValueOfHuffmanCode 5 = 25
+				 ValueOfHuffmanCode 6 = 26
+				 ValueOfHuffmanCode 7 = 37
+				 ValueOfHuffmanCode 8 = 38
+				 ValueOfHuffmanCode 9 = 39
+				 ValueOfHuffmanCode 10 = 40
+				 ValueOfHuffmanCode 11 = 41
+				 ValueOfHuffmanCode 12 = 42
+				 ValueOfHuffmanCode 13 = 52
+				 ValueOfHuffmanCode 14 = 53
+				 ValueOfHuffmanCode 15 = 54
+				 ValueOfHuffmanCode 16 = 55
+				 ValueOfHuffmanCode 17 = 56
+				 ValueOfHuffmanCode 18 = 57
+				 ValueOfHuffmanCode 19 = 58
+				 ValueOfHuffmanCode 20 = 67
+				 ValueOfHuffmanCode 21 = 68
+				 ValueOfHuffmanCode 22 = 69
+				 ValueOfHuffmanCode 23 = 70
+				 ValueOfHuffmanCode 24 = 71
+				 ValueOfHuffmanCode 25 = 72
+				 ValueOfHuffmanCode 26 = 73
+				 ValueOfHuffmanCode 27 = 74
+				 ValueOfHuffmanCode 28 = 83
+				 ValueOfHuffmanCode 29 = 84
+				 ValueOfHuffmanCode 30 = 85
+				 ValueOfHuffmanCode 31 = 86
+				 ValueOfHuffmanCode 32 = 87
+				 ValueOfHuffmanCode 33 = 88
+				 ValueOfHuffmanCode 34 = 89
+				 ValueOfHuffmanCode 35 = 90
+				 ValueOfHuffmanCode 36 = 99
+				 ValueOfHuffmanCode 37 = 100
+				 ValueOfHuffmanCode 38 = 101
+				 ValueOfHuffmanCode 39 = 102
+				 ValueOfHuffmanCode 40 = 103
+				 ValueOfHuffmanCode 41 = 104
+				 ValueOfHuffmanCode 42 = 105
+				 ValueOfHuffmanCode 43 = 106
+				 ValueOfHuffmanCode 44 = 115
+				 ValueOfHuffmanCode 45 = 116
+				 ValueOfHuffmanCode 46 = 117
+				 ValueOfHuffmanCode 47 = 118
+				 ValueOfHuffmanCode 48 = 119
+				 ValueOfHuffmanCode 49 = 120
+				 ValueOfHuffmanCode 50 = 121
+				 ValueOfHuffmanCode 51 = 122
+				 ValueOfHuffmanCode 52 = 131
+				 ValueOfHuffmanCode 53 = 132
+				 ValueOfHuffmanCode 54 = 133
+				 ValueOfHuffmanCode 55 = 134
+				 ValueOfHuffmanCode 56 = 135
+				 ValueOfHuffmanCode 57 = 136
+				 ValueOfHuffmanCode 58 = 137
+				 ValueOfHuffmanCode 59 = 138
+				 ValueOfHuffmanCode 60 = 146
+				 ValueOfHuffmanCode 61 = 147
+				 ValueOfHuffmanCode 62 = 148
+				 ValueOfHuffmanCode 63 = 149
+				 ValueOfHuffmanCode 64 = 150
+				 ValueOfHuffmanCode 65 = 151
+				 ValueOfHuffmanCode 66 = 152
+				 ValueOfHuffmanCode 67 = 153
+				 ValueOfHuffmanCode 68 = 154
+				 ValueOfHuffmanCode 69 = 162
+				 ValueOfHuffmanCode 70 = 163
+				 ValueOfHuffmanCode 71 = 164
+				 ValueOfHuffmanCode 72 = 165
+				 ValueOfHuffmanCode 73 = 166
+				 ValueOfHuffmanCode 74 = 167
+				 ValueOfHuffmanCode 75 = 168
+				 ValueOfHuffmanCode 76 = 169
+				 ValueOfHuffmanCode 77 = 170
+				 ValueOfHuffmanCode 78 = 178
+				 ValueOfHuffmanCode 79 = 179
+				 ValueOfHuffmanCode 80 = 180
+				 ValueOfHuffmanCode 81 = 181
+				 ValueOfHuffmanCode 82 = 182
+				 ValueOfHuffmanCode 83 = 183
+				 ValueOfHuffmanCode 84 = 184
+				 ValueOfHuffmanCode 85 = 185
+				 ValueOfHuffmanCode 86 = 186
+				 ValueOfHuffmanCode 87 = 194
+				 ValueOfHuffmanCode 88 = 195
+				 ValueOfHuffmanCode 89 = 196
+				 ValueOfHuffmanCode 90 = 197
+				 ValueOfHuffmanCode 91 = 198
+				 ValueOfHuffmanCode 92 = 199
+				 ValueOfHuffmanCode 93 = 200
+				 ValueOfHuffmanCode 94 = 201
+				 ValueOfHuffmanCode 95 = 202
+				 ValueOfHuffmanCode 96 = 210
+				 ValueOfHuffmanCode 97 = 211
+				 ValueOfHuffmanCode 98 = 212
+				 ValueOfHuffmanCode 99 = 213
+				 ValueOfHuffmanCode 100 = 214
+				 ValueOfHuffmanCode 101 = 215
+				 ValueOfHuffmanCode 102 = 216
+				 ValueOfHuffmanCode 103 = 217
+				 ValueOfHuffmanCode 104 = 218
+				 ValueOfHuffmanCode 105 = 225
+				 ValueOfHuffmanCode 106 = 226
+				 ValueOfHuffmanCode 107 = 227
+				 ValueOfHuffmanCode 108 = 228
+				 ValueOfHuffmanCode 109 = 229
+				 ValueOfHuffmanCode 110 = 230
+				 ValueOfHuffmanCode 111 = 231
+				 ValueOfHuffmanCode 112 = 232
+				 ValueOfHuffmanCode 113 = 233
+				 ValueOfHuffmanCode 114 = 234
+				 ValueOfHuffmanCode 115 = 241
+				 ValueOfHuffmanCode 116 = 242
+				 ValueOfHuffmanCode 117 = 243
+				 ValueOfHuffmanCode 118 = 244
+				 ValueOfHuffmanCode 119 = 245
+				 ValueOfHuffmanCode 120 = 246
+				 ValueOfHuffmanCode 121 = 247
+				 ValueOfHuffmanCode 122 = 248
+				 ValueOfHuffmanCode 123 = 249
+				 ValueOfHuffmanCode 124 = 250
+
+Offset 0x23ae Marker 0xffc4 DHT Define Huffman Table(s) length variable 0x1f 
+	JPEG_DHT_Parameters:
+		 TableClass = 0
+		 HuffmanTableIdentifier = 1
+			 nHuffmanCodesOfLength 0 = 0
+			 nHuffmanCodesOfLength 1 = 3
+				 ValueOfHuffmanCode 0 = 0
+				 ValueOfHuffmanCode 1 = 1
+				 ValueOfHuffmanCode 2 = 2
+			 nHuffmanCodesOfLength 2 = 1
+				 ValueOfHuffmanCode 0 = 3
+			 nHuffmanCodesOfLength 3 = 1
+				 ValueOfHuffmanCode 0 = 4
+			 nHuffmanCodesOfLength 4 = 1
+				 ValueOfHuffmanCode 0 = 5
+			 nHuffmanCodesOfLength 5 = 1
+				 ValueOfHuffmanCode 0 = 6
+			 nHuffmanCodesOfLength 6 = 1
+				 ValueOfHuffmanCode 0 = 7
+			 nHuffmanCodesOfLength 7 = 1
+				 ValueOfHuffmanCode 0 = 8
+			 nHuffmanCodesOfLength 8 = 1
+				 ValueOfHuffmanCode 0 = 9
+			 nHuffmanCodesOfLength 9 = 1
+				 ValueOfHuffmanCode 0 = 10
+			 nHuffmanCodesOfLength 10 = 1
+				 ValueOfHuffmanCode 0 = 11
+			 nHuffmanCodesOfLength 11 = 0
+			 nHuffmanCodesOfLength 12 = 0
+			 nHuffmanCodesOfLength 13 = 0
+			 nHuffmanCodesOfLength 14 = 0
+			 nHuffmanCodesOfLength 15 = 0
+
+Offset 0x23cf Marker 0xffc4 DHT Define Huffman Table(s) length variable 0xb5 
+	JPEG_DHT_Parameters:
+		 TableClass = 1
+		 HuffmanTableIdentifier = 1
+			 nHuffmanCodesOfLength 0 = 0
+			 nHuffmanCodesOfLength 1 = 2
+				 ValueOfHuffmanCode 0 = 0
+				 ValueOfHuffmanCode 1 = 1
+			 nHuffmanCodesOfLength 2 = 1
+				 ValueOfHuffmanCode 0 = 2
+			 nHuffmanCodesOfLength 3 = 2
+				 ValueOfHuffmanCode 0 = 3
+				 ValueOfHuffmanCode 1 = 17
+			 nHuffmanCodesOfLength 4 = 4
+				 ValueOfHuffmanCode 0 = 4
+				 ValueOfHuffmanCode 1 = 5
+				 ValueOfHuffmanCode 2 = 33
+				 ValueOfHuffmanCode 3 = 49
+			 nHuffmanCodesOfLength 5 = 4
+				 ValueOfHuffmanCode 0 = 6
+				 ValueOfHuffmanCode 1 = 18
+				 ValueOfHuffmanCode 2 = 65
+				 ValueOfHuffmanCode 3 = 81
+			 nHuffmanCodesOfLength 6 = 3
+				 ValueOfHuffmanCode 0 = 7
+				 ValueOfHuffmanCode 1 = 97
+				 ValueOfHuffmanCode 2 = 113
+			 nHuffmanCodesOfLength 7 = 4
+				 ValueOfHuffmanCode 0 = 19
+				 ValueOfHuffmanCode 1 = 34
+				 ValueOfHuffmanCode 2 = 50
+				 ValueOfHuffmanCode 3 = 129
+			 nHuffmanCodesOfLength 8 = 7
+				 ValueOfHuffmanCode 0 = 8
+				 ValueOfHuffmanCode 1 = 20
+				 ValueOfHuffmanCode 2 = 66
+				 ValueOfHuffmanCode 3 = 145
+				 ValueOfHuffmanCode 4 = 161
+				 ValueOfHuffmanCode 5 = 177
+				 ValueOfHuffmanCode 6 = 193
+			 nHuffmanCodesOfLength 9 = 5
+				 ValueOfHuffmanCode 0 = 9
+				 ValueOfHuffmanCode 1 = 35
+				 ValueOfHuffmanCode 2 = 51
+				 ValueOfHuffmanCode 3 = 82
+				 ValueOfHuffmanCode 4 = 240
+			 nHuffmanCodesOfLength 10 = 4
+				 ValueOfHuffmanCode 0 = 21
+				 ValueOfHuffmanCode 1 = 98
+				 ValueOfHuffmanCode 2 = 114
+				 ValueOfHuffmanCode 3 = 209
+			 nHuffmanCodesOfLength 11 = 4
+				 ValueOfHuffmanCode 0 = 10
+				 ValueOfHuffmanCode 1 = 22
+				 ValueOfHuffmanCode 2 = 36
+				 ValueOfHuffmanCode 3 = 52
+			 nHuffmanCodesOfLength 12 = 0
+			 nHuffmanCodesOfLength 13 = 1
+				 ValueOfHuffmanCode 0 = 225
+			 nHuffmanCodesOfLength 14 = 2
+				 ValueOfHuffmanCode 0 = 37
+				 ValueOfHuffmanCode 1 = 241
+			 nHuffmanCodesOfLength 15 = 119
+				 ValueOfHuffmanCode 0 = 23
+				 ValueOfHuffmanCode 1 = 24
+				 ValueOfHuffmanCode 2 = 25
+				 ValueOfHuffmanCode 3 = 26
+				 ValueOfHuffmanCode 4 = 38
+				 ValueOfHuffmanCode 5 = 39
+				 ValueOfHuffmanCode 6 = 40
+				 ValueOfHuffmanCode 7 = 41
+				 ValueOfHuffmanCode 8 = 42
+				 ValueOfHuffmanCode 9 = 53
+				 ValueOfHuffmanCode 10 = 54
+				 ValueOfHuffmanCode 11 = 55
+				 ValueOfHuffmanCode 12 = 56
+				 ValueOfHuffmanCode 13 = 57
+				 ValueOfHuffmanCode 14 = 58
+				 ValueOfHuffmanCode 15 = 67
+				 ValueOfHuffmanCode 16 = 68
+				 ValueOfHuffmanCode 17 = 69
+				 ValueOfHuffmanCode 18 = 70
+				 ValueOfHuffmanCode 19 = 71
+				 ValueOfHuffmanCode 20 = 72
+				 ValueOfHuffmanCode 21 = 73
+				 ValueOfHuffmanCode 22 = 74
+				 ValueOfHuffmanCode 23 = 83
+				 ValueOfHuffmanCode 24 = 84
+				 ValueOfHuffmanCode 25 = 85
+				 ValueOfHuffmanCode 26 = 86
+				 ValueOfHuffmanCode 27 = 87
+				 ValueOfHuffmanCode 28 = 88
+				 ValueOfHuffmanCode 29 = 89
+				 ValueOfHuffmanCode 30 = 90
+				 ValueOfHuffmanCode 31 = 99
+				 ValueOfHuffmanCode 32 = 100
+				 ValueOfHuffmanCode 33 = 101
+				 ValueOfHuffmanCode 34 = 102
+				 ValueOfHuffmanCode 35 = 103
+				 ValueOfHuffmanCode 36 = 104
+				 ValueOfHuffmanCode 37 = 105
+				 ValueOfHuffmanCode 38 = 106
+				 ValueOfHuffmanCode 39 = 115
+				 ValueOfHuffmanCode 40 = 116
+				 ValueOfHuffmanCode 41 = 117
+				 ValueOfHuffmanCode 42 = 118
+				 ValueOfHuffmanCode 43 = 119
+				 ValueOfHuffmanCode 44 = 120
+				 ValueOfHuffmanCode 45 = 121
+				 ValueOfHuffmanCode 46 = 122
+				 ValueOfHuffmanCode 47 = 130
+				 ValueOfHuffmanCode 48 = 131
+				 ValueOfHuffmanCode 49 = 132
+				 ValueOfHuffmanCode 50 = 133
+				 ValueOfHuffmanCode 51 = 134
+				 ValueOfHuffmanCode 52 = 135
+				 ValueOfHuffmanCode 53 = 136
+				 ValueOfHuffmanCode 54 = 137
+				 ValueOfHuffmanCode 55 = 138
+				 ValueOfHuffmanCode 56 = 146
+				 ValueOfHuffmanCode 57 = 147
+				 ValueOfHuffmanCode 58 = 148
+				 ValueOfHuffmanCode 59 = 149
+				 ValueOfHuffmanCode 60 = 150
+				 ValueOfHuffmanCode 61 = 151
+				 ValueOfHuffmanCode 62 = 152
+				 ValueOfHuffmanCode 63 = 153
+				 ValueOfHuffmanCode 64 = 154
+				 ValueOfHuffmanCode 65 = 162
+				 ValueOfHuffmanCode 66 = 163
+				 ValueOfHuffmanCode 67 = 164
+				 ValueOfHuffmanCode 68 = 165
+				 ValueOfHuffmanCode 69 = 166
+				 ValueOfHuffmanCode 70 = 167
+				 ValueOfHuffmanCode 71 = 168
+				 ValueOfHuffmanCode 72 = 169
+				 ValueOfHuffmanCode 73 = 170
+				 ValueOfHuffmanCode 74 = 178
+				 ValueOfHuffmanCode 75 = 179
+				 ValueOfHuffmanCode 76 = 180
+				 ValueOfHuffmanCode 77 = 181
+				 ValueOfHuffmanCode 78 = 182
+				 ValueOfHuffmanCode 79 = 183
+				 ValueOfHuffmanCode 80 = 184
+				 ValueOfHuffmanCode 81 = 185
+				 ValueOfHuffmanCode 82 = 186
+				 ValueOfHuffmanCode 83 = 194
+				 ValueOfHuffmanCode 84 = 195
+				 ValueOfHuffmanCode 85 = 196
+				 ValueOfHuffmanCode 86 = 197
+				 ValueOfHuffmanCode 87 = 198
+				 ValueOfHuffmanCode 88 = 199
+				 ValueOfHuffmanCode 89 = 200
+				 ValueOfHuffmanCode 90 = 201
+				 ValueOfHuffmanCode 91 = 202
+				 ValueOfHuffmanCode 92 = 210
+				 ValueOfHuffmanCode 93 = 211
+				 ValueOfHuffmanCode 94 = 212
+				 ValueOfHuffmanCode 95 = 213
+				 ValueOfHuffmanCode 96 = 214
+				 ValueOfHuffmanCode 97 = 215
+				 ValueOfHuffmanCode 98 = 216
+				 ValueOfHuffmanCode 99 = 217
+				 ValueOfHuffmanCode 100 = 218
+				 ValueOfHuffmanCode 101 = 226
+				 ValueOfHuffmanCode 102 = 227
+				 ValueOfHuffmanCode 103 = 228
+				 ValueOfHuffmanCode 104 = 229
+				 ValueOfHuffmanCode 105 = 230
+				 ValueOfHuffmanCode 106 = 231
+				 ValueOfHuffmanCode 107 = 232
+				 ValueOfHuffmanCode 108 = 233
+				 ValueOfHuffmanCode 109 = 234
+				 ValueOfHuffmanCode 110 = 242
+				 ValueOfHuffmanCode 111 = 243
+				 ValueOfHuffmanCode 112 = 244
+				 ValueOfHuffmanCode 113 = 245
+				 ValueOfHuffmanCode 114 = 246
+				 ValueOfHuffmanCode 115 = 247
+				 ValueOfHuffmanCode 116 = 248
+				 ValueOfHuffmanCode 117 = 249
+				 ValueOfHuffmanCode 118 = 250
+
+Offset 0x2486 Marker 0xffda SOS Start of Scan length variable 0x0c 
+	JPEG_SOS_Parameters:
+		 nComponentsPerScan = 3
+		 component 0
+			 ScanComponentSelector = 1
+			 DCEntropyCodingTableSelector = 0
+			 ACEntropyCodingTableSelector = 0
+			 MappingTableSelector(LS) = 0
+		 component 1
+			 ScanComponentSelector = 2
+			 DCEntropyCodingTableSelector = 1
+			 ACEntropyCodingTableSelector = 1
+			 MappingTableSelector(LS) = 17
+		 component 2
+			 ScanComponentSelector = 3
+			 DCEntropyCodingTableSelector = 1
+			 ACEntropyCodingTableSelector = 1
+			 MappingTableSelector(LS) = 17
+		 StartOfSpectralOrPredictorSelection/NearLosslessDifferenceBound(LS) = 0
+		 EndOfSpectralSelection/InterleaveMode(LS) = 63
+		 SuccessiveApproximationBitPositionHigh = 0
+		 SuccessiveApproximationBitPositionLowOrPointTransform = 0
+Offset 0x28da Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x294a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2968 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3b2f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3c5f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3ddd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3e03 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3ede Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3f72 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x402b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x484b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x4df1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x4e71 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x52ab Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x5841 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x594a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x59f0 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x5b37 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x5e72 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x5ebd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x6467 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x670f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x6f49 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x7102 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x732c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x77a6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x78d3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x798a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x7a53 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x7b07 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x8386 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x83c1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x843b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x8860 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x8f47 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x91c3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x9383 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x9882 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x9934 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x99bc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xa540 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xab40 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xad42 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xb3ec Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xb4f3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xb770 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xbb2d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xbca5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xbdb6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xc008 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xc233 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xc310 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xc716 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xd1d9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xd282 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xd83e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xd8a3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xde43 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xe06a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xe36b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xe405 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xe44e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xe5d1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xeae9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xef7d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xf951 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xf969 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xfa5c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xfb7b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xfe8e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0xfead Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x10e81 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x11082 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x11da4 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x11de1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x11ebc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x11fe3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x12160 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1226f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x12720 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x12ba9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x12bcf Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x12d00 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x12e5d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x131e5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x13362 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x13460 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1348a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x138c2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x138db Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x13a0b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x13dca Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x13dd1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x13f9b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1433f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14627 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14728 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x149a1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14a3f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14b88 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14c02 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14e72 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x14e83 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1533a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1563b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x15d2b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x15d43 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x162ad Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x16518 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x167f6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x16923 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x16975 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x169f5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x172f5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1773a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1777f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1785c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x178aa Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x17ad2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x17ae9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x17dfc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1808b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x181c8 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x188cc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x18930 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1896b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x189e7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x18a6c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x18dc7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x18f7e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x18fa9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1914d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1924f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x19bfe Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x19c48 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x19cb8 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x19ce3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x19f63 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a084 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a0b2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a4e0 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a587 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a701 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a817 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1a957 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1acc2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1b4af Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1b515 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1b7fc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1b8bb Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1bb2f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1c5f5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1c74d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1c77c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1c8c6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1c99b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1cefd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1d00b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1d0b3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1d540 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1d674 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1d877 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1db9a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1dc9f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1dcc2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1dd45 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1de24 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1dfee Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1e4c7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1e90d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1e952 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ea1d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ea43 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ea73 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1eaa7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ec44 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ed18 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ee35 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ee5c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1ef34 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f0d0 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f115 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f521 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f658 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f6c1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f6e5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f780 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f807 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f981 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1f9c1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1fb67 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x1fdf2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2049f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2051f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x20664 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2084f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x20881 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x20e82 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x213cd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x21a44 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x22218 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x22537 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x22777 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x227b7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2299c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x22bf1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23092 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23128 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23192 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x231aa Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23620 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23808 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23a9c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x23b5d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x24345 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2460e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x24d24 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x24dd7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x24dda Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x24ebd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x24f6e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2523e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2554b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x259d9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x25c0b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x25d68 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x26075 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x260ea Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2651a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2655a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x26788 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2679a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x26bde Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x26fa6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x275cd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x27631 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x276fa Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x27901 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x27c5a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x27da1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x27f10 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x283ed Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x284f9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2857d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x285cd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x28703 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x288dd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x289cb Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x289de Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x28c94 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x28d63 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x28d82 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x28dc7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x28f28 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x291b2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x292a5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x293ca Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x29699 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x29889 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x29db3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x29e73 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x29f23 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2a702 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2a868 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2aadd Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2aaf2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2abba Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ad91 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ade4 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2afd5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2b140 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2b633 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2b70e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2b7a7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2b99b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2bb4f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2bb9e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2bbd2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2bc62 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c2c9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c4d3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c542 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c563 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c5f2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c7e5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c866 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2c992 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ca29 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2cb36 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2cb41 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2cb7c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2cfde Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2d425 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2d567 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2dbe7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2dd7a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2de67 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2deaf Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2e1cc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2e4b6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2e56e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2e6be Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2e6dc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2e7b1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ea33 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2eb35 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ec47 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ef0d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2f1a2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2f5ab Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2f81f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2f940 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2fbc7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x2ffcc Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x300fb Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3013b Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x301f5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x30262 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3043a Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x307c1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x30931 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x309d5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x31091 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x311ca Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x31830 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x319d6 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x31bef Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x31c51 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x31ca9 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32079 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x321cf Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32298 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32627 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x328ee Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32cb4 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32cf5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32d0e Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32d84 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32de2 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32e3c Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x32fb3 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x33546 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3366d Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x33788 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x34058 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x3440f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x34570 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x349d7 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x34dad Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x35a06 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x35c67 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x35d5f Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x35f31 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x36063 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x360d4 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x361af Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x362b1 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x362c4 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x363d5 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x364ec Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x366da Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x36c41 Encoded 0xff in entropy-coded segment followed by stuffed zero byte
+Offset 0x36ff2 Marker 0xffd9 EOI End of Image (JPEG 2000 EOC End of codestream) 
+End of file
