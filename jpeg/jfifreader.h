@@ -37,13 +37,14 @@ private:
     char yThumbnail;
 
     std::vector<char> thumbnail;
+    std::vector<DQT> _dqts;
 
-    DQT _dqt;
+
     std::ifstream _stream;
 
     void skipAppMarkers();
-    void readDQT();
-
+    void readDQT(DQT &, bool skipmarker = false);
+    void readDQT(std::vector<DQT> dqts);
 
 public:
     JfifReader(const std::string &a);

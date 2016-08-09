@@ -39,15 +39,20 @@ void JfifReader::skipAppMarkers()
     _stream.seekg(-2, std::ios::cur);
 }
 
-void JfifReader::readDQT()
+void JfifReader::readDQT(DQT &dqt, bool skipmarker)
 {
-    uint2 marker = 0;
+    uint2 marker = 0, len = 0;
 
-    read2bytes(_stream, marker);
 
-    if(JpegMarker::DQT != marker)
-        return;
+    if(!skipmarker){
+        read2bytes(_stream, marker);
 
+        if(JpegMarker::DQT != marker)
+            return;
+    }
+
+
+    read2bytes(_stream, len);
 
     char byte, identifier, size;
     int tableLength = 0;
@@ -67,17 +72,37 @@ void JfifReader::readDQT()
     }
 
 
-    _dqt.table.resize(tableLength);
+    dqt.table.resize(tableLength);
 
-    _stream.read(&_dqt.table[0], tableLength);
+    _stream.read(&dqt.table[0], tableLength);
 
-    _dqt.identifier = 0x0F & byte;
-    _dqt.size = size;
+    dqt.identifier = 0x0F & byte;
+    dqt.size = size;
+
+}
+
+void JfifReader::readDQT(std::vector<DQT> dqts)
+{
+    uint2 marker = 0;
+
+    read2bytes(_stream, marker);
 
 
+    while(marker == JpegMarker::DQT){
+
+        DQT n;
+        dqts.push_back(n);
+
+        DQT &l = dqts.back();
+
+        readDQT(l, true);
 
 
+        read2bytes(_stream, marker);
+    }
 
+
+    _stream.seekg(-2, std::ios_base::cur);
 }
 
 JfifReader::JfifReader(const std::string &a):
@@ -127,7 +152,8 @@ void JfifReader::read()
 {
     this->readHeader();
     this->skipAppMarkers();
-    this->readDQT();
+    this->readDQT(this->_dqts);
+
 
 }
 
