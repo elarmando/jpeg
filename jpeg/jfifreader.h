@@ -20,6 +20,27 @@ public:
     std::vector<char> table;
 };
 
+class ComponentSOF{
+public:
+    ComponentSOF();
+    char identifier;
+    char horizontalSampling;
+    char verticalSampling;
+    char quantizationIdentifier;
+};
+
+class SOF0{
+public:
+    SOF0();
+     char precision;
+     uint2 height;
+     uint2 width;
+     char numComponents;
+
+     std::vector<ComponentSOF> components;
+};
+
+
 
 class JfifReader
 {
@@ -39,12 +60,17 @@ private:
     std::vector<char> thumbnail;
     std::vector<DQT> _dqts;
 
+    SOF0 _sof0;
+
 
     std::ifstream _stream;
 
     void skipAppMarkers();
     void readDQT(DQT &, bool skipmarker = false);
     void readDQT(std::vector<DQT> dqts);
+
+    void readSOF0(SOF0 &sof0);
+    void readSOFBaseline();
 
 public:
     JfifReader(const std::string &a);

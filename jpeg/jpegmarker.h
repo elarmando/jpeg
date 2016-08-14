@@ -16,8 +16,10 @@ public:
     const static uint2 APP0 = 0xFFE0;//Application marker
     const static uint2 DHT = 0xFFC4;//define huffman table
     const static uint2 DQT = 0xFFDB; //define quantization table
+    const static uint2 SOF0 = 0xFFC0; //start of frame, baseline
 
     static bool isAPP(uint2 marker);
+
 };
 
 #endif // JPEGMARKER_H

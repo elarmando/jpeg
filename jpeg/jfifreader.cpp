@@ -9,6 +9,12 @@ DQT::DQT(){
 
 }
 
+ComponentSOF::ComponentSOF(){}
+
+SOF0::SOF0(){}
+
+
+
 void JfifReader::skipAppMarkers()
 {
     uint2 marker = 0;
@@ -76,7 +82,7 @@ void JfifReader::readDQT(DQT &dqt, bool skipmarker)
 
     _stream.read(&dqt.table[0], tableLength);
 
-    dqt.identifier = 0x0F & byte;
+    dqt.identifier = identifier;
     dqt.size = size;
 
 }
@@ -104,6 +110,46 @@ void JfifReader::readDQT(std::vector<DQT> dqts)
 
     _stream.seekg(-2, std::ios_base::cur);
 }
+
+void JfifReader::readSOF0(SOF0 &sof0)
+{
+    uint2 marker = 0;
+
+    read2bytes(_stream, marker);
+
+    if(marker != JpegMarker::SOF0)
+        return;
+
+    uint2 len = 0 ;
+
+    read2bytes(_stream, len);
+
+
+    _stream.read(&sof0.precision, 1);
+    read2bytes(_stream, sof0.height);
+    read2bytes(_stream, sof0.width);
+    _stream.read(&(sof0.numComponents), 1);
+
+    sof0.components.resize(0);
+
+
+    for(int i = 0; i < sof0.numComponents; i+=1){
+        ComponentSOF component;
+        char sampling;
+
+        _stream.read(&component.identifier, 1);
+        _stream.read(&sampling, 1);
+        _stream.read(&component.quantizationIdentifier, 1);
+
+        component.horizontalSampling = (sampling & 0xF0) >>4;
+        component.verticalSampling = (sampling & 0x0F);
+
+        _sof0.components.push_back(component);
+
+    }
+}
+
+
 
 JfifReader::JfifReader(const std::string &a):
     pathFile(a),
@@ -153,6 +199,11 @@ void JfifReader::read()
     this->readHeader();
     this->skipAppMarkers();
     this->readDQT(this->_dqts);
+
+
+    this->readSOF0(this->_sof0);
+
+
 
 
 }
@@ -225,4 +276,7 @@ void JfifReader::read2bytes(istream &stream, uint2 &outbytes)
     outbytes = ((int)(bytes[0]) << 8 ) + bytes[1];
 
 }
+
+
+
 
