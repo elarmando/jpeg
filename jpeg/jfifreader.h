@@ -20,6 +20,36 @@ public:
     std::vector<char> table;
 };
 
+class SOS{
+
+public:
+    SOS();
+    char componentCount;
+
+    //descriptor
+    char componentIdentifier;
+    char dcHuffmanTable;
+    char acHuffmanTable;
+
+    char spectralSelectionStart;
+    char spectralSelectionStop;
+
+    char succesiveApproximation;
+};
+
+class DHT{
+ public:
+
+    DHT();
+
+    char classNum;
+    char identifier;
+    std::vector<char> countHuffmanCodes;
+    std::vector<char> symbols;
+
+
+};
+
 class ComponentSOF{
 public:
     ComponentSOF();
@@ -61,6 +91,10 @@ private:
     std::vector<DQT> _dqts;
 
     SOF0 _sof0;
+    SOS _sos;
+    DHT _dht;
+
+
 
 
     std::ifstream _stream;
@@ -70,7 +104,9 @@ private:
     void readDQT(std::vector<DQT> dqts);
 
     void readSOF0(SOF0 &sof0);
-    void readSOFBaseline();
+    void readSOS(SOS &sos);
+
+    void readDHT(DHT &dht);
 
 public:
     JfifReader(const std::string &a);

@@ -14,6 +14,11 @@ ComponentSOF::ComponentSOF(){}
 SOF0::SOF0(){}
 
 
+SOS::SOS()
+{}
+
+
+
 
 void JfifReader::skipAppMarkers()
 {
@@ -149,6 +154,77 @@ void JfifReader::readSOF0(SOF0 &sof0)
     }
 }
 
+void JfifReader::readSOS(SOS &sos)
+{
+    uint2 marker = 0;
+
+    read2bytes(_stream, marker);
+
+    if(JpegMarker::SOS != marker){
+        return;
+    }
+
+    char descriptor1 = 0, descriptor2 = 0;
+
+    _stream.read(&sos.componentCount, 1);
+    _stream.read(&descriptor1, 1);
+    _stream.read(&descriptor2, 1);
+
+    _stream.read(&sos.spectralSelectionStart, 1);
+    _stream.read(&sos.spectralSelectionStop, 1);
+    _stream.read(&sos.succesiveApproximation, 1);
+
+    sos.componentIdentifier = descriptor1;
+    sos.dcHuffmanTable = (descriptor2 & 0xF0) >> 4;
+    sos.acHuffmanTable = (descriptor2 & 0x0F);
+
+
+}
+
+void JfifReader::readDHT(DHT &dht)
+{
+
+    uint2 marker = 0;
+
+    read2bytes(_stream, marker);
+
+    if(marker != JpegMarker::DHT)
+        return;
+
+
+    uint2 len = 0;
+
+    read2bytes(_stream, len);
+
+    char firstByte;
+
+    _stream.read(&firstByte, 1);
+    dht.classNum = (firstByte & 0xF0) >> 4;
+    dht.identifier = firstByte & 0x0F;
+
+    dht.countHuffmanCodes.resize(16);
+
+    _stream.read(&dht.countHuffmanCodes[0], 16);
+
+    unsigned int sum = 0;
+
+    auto ite = dht.countHuffmanCodes.begin();
+    auto end = dht.countHuffmanCodes.end();
+
+    for(;ite != end; ite++){
+
+        char count = *ite;
+
+        sum+= (unsigned char) count;
+
+    }
+
+    dht.symbols.resize(sum);
+
+    _stream.read(dht.symbols.data(), sum);
+
+}
+
 
 
 JfifReader::JfifReader(const std::string &a):
@@ -202,7 +278,7 @@ void JfifReader::read()
 
 
     this->readSOF0(this->_sof0);
-
+    this->readDHT(this->_dht);
 
 
 
@@ -280,3 +356,10 @@ void JfifReader::read2bytes(istream &stream, uint2 &outbytes)
 
 
 
+
+
+
+DHT::DHT()
+{
+
+}

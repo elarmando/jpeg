@@ -17,6 +17,7 @@ public:
     const static uint2 DHT = 0xFFC4;//define huffman table
     const static uint2 DQT = 0xFFDB; //define quantization table
     const static uint2 SOF0 = 0xFFC0; //start of frame, baseline
+    const static uint2 SOS = 0xFFDA;
 
     static bool isAPP(uint2 marker);
 
