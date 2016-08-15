@@ -13,7 +13,6 @@ ComponentSOF::ComponentSOF(){}
 
 SOF0::SOF0(){}
 
-
 SOS::SOS()
 {}
 
@@ -28,21 +27,9 @@ void JfifReader::skipAppMarkers()
     read2bytes(_stream, marker);
 
     while(JpegMarker::isAPP(marker)){
-
-
         read2bytes(_stream, length);
-
-        length -=2;
-       //  std::cout<<"pos "<< _stream.tellg();
-       // std::cout<<" marker "<<hex<<marker;
-        //std::cout<<" lenght "<<dec<<length<<'\n';
-
-
+        length -=2;      
         _stream.seekg( length, std::ios_base::cur);
-
-
-
-
         read2bytes(_stream, marker);
 
     }
@@ -50,7 +37,7 @@ void JfifReader::skipAppMarkers()
     _stream.seekg(-2, std::ios::cur);
 }
 
-void JfifReader::readDQT(DQT &dqt, bool skipmarker)
+void JfifReader::readSequenceOfDQT(std::vector<DQT> &dqts, bool skipmarker)
 {
     uint2 marker = 0, len = 0;
 
@@ -64,31 +51,42 @@ void JfifReader::readDQT(DQT &dqt, bool skipmarker)
 
 
     read2bytes(_stream, len);
+    unsigned long bytesRead = 2;//counting the  2 bytes length
 
-    char byte, identifier, size;
-    int tableLength = 0;
+    while(bytesRead < len){
 
-    _stream.read(&byte, 1);
+        DQT dqt;
+        char byte, identifier, size;
+        int tableLength = 0;
 
-    identifier = 0x0F & byte;
-    size = (0xF0 & byte)>>4;
+        _stream.read(&byte, 1);
 
-    if(size == 0){
-        size = 1;
-        tableLength = 64;
+        identifier = 0x0F & byte;
+        size = (0xF0 & byte)>>4;
+
+        if(size == 0){
+            size = 1;
+            tableLength = 64;
+        }
+        else{
+            size = 2;
+            tableLength = 128;
+        }
+
+
+        dqt.table.resize(tableLength);
+
+        _stream.read(&dqt.table[0], tableLength);
+
+        dqt.identifier = identifier;
+        dqt.size = size;
+
+        dqts.push_back(dqt);
+
+        bytesRead+= tableLength + 1;//el tamaño de la tabla y un byte de la descripcion
     }
-    else{
-        size = 2;
-        tableLength = 128;
-    }
 
 
-    dqt.table.resize(tableLength);
-
-    _stream.read(&dqt.table[0], tableLength);
-
-    dqt.identifier = identifier;
-    dqt.size = size;
 
 }
 
@@ -100,15 +98,7 @@ void JfifReader::readDQT(std::vector<DQT> dqts)
 
 
     while(marker == JpegMarker::DQT){
-
-        DQT n;
-        dqts.push_back(n);
-
-        DQT &l = dqts.back();
-
-        readDQT(l, true);
-
-
+        readSequenceOfDQT(dqts, true);
         read2bytes(_stream, marker);
     }
 
@@ -181,15 +171,18 @@ void JfifReader::readSOS(SOS &sos)
 
 }
 
-void JfifReader::readDHT(DHT &dht)
+void JfifReader::readDHT(DHT &dht, bool skipmarker)
 {
 
-    uint2 marker = 0;
+    if(skipmarker == false){
+        uint2 marker = 0;
 
-    read2bytes(_stream, marker);
+        read2bytes(_stream, marker);
 
-    if(marker != JpegMarker::DHT)
-        return;
+        if(marker != JpegMarker::DHT)
+            return;
+    }
+
 
 
     uint2 len = 0;
@@ -222,6 +215,27 @@ void JfifReader::readDHT(DHT &dht)
     dht.symbols.resize(sum);
 
     _stream.read(dht.symbols.data(), sum);
+
+}
+
+void JfifReader::readDHT(std::vector<DHT> &dhts)
+{
+
+    uint2 marker = 0;
+
+    read2bytes(_stream, marker);
+
+    while(marker == JpegMarker::DHT){
+
+        DHT dht;
+        readDHT(dht, true);
+
+        dhts.push_back(dht);
+
+        read2bytes(_stream, marker);
+    }
+
+    _stream.seekg(-2, std::ios::cur);
 
 }
 
@@ -278,7 +292,9 @@ void JfifReader::read()
 
 
     this->readSOF0(this->_sof0);
-    this->readDHT(this->_dht);
+
+
+    this->readDHT(this->_dhts);
 
 
 

@@ -89,6 +89,7 @@ private:
 
     std::vector<char> thumbnail;
     std::vector<DQT> _dqts;
+    std::vector<DHT> _dhts;
 
     SOF0 _sof0;
     SOS _sos;
@@ -100,13 +101,14 @@ private:
     std::ifstream _stream;
 
     void skipAppMarkers();
-    void readDQT(DQT &, bool skipmarker = false);
+    void readSequenceOfDQT(std::vector<DQT> &dqts, bool skipmarker = false);
     void readDQT(std::vector<DQT> dqts);
 
     void readSOF0(SOF0 &sof0);
     void readSOS(SOS &sos);
 
-    void readDHT(DHT &dht);
+    void readDHT(DHT &dht, bool skipmarker = false);
+    void readDHT(std::vector<DHT> &dht);
 
 public:
     JfifReader(const std::string &a);
