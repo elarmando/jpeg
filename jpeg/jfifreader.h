@@ -20,16 +20,29 @@ public:
     std::vector<char> table;
 };
 
+
+class SOSComponentDescriptor{
+public:
+    SOSComponentDescriptor();
+
+
+    char componentIdentifier;
+    char dcHuffmanTable;
+    char acHuffmanTable;
+};
+
 class SOS{
 
 public:
     SOS();
     char componentCount;
 
-    //descriptor
-    char componentIdentifier;
-    char dcHuffmanTable;
-    char acHuffmanTable;
+     //descriptor
+    std::vector<SOSComponentDescriptor> componentDescriptors;
+
+   // char componentIdentifier;
+   // char dcHuffmanTable;
+   // char acHuffmanTable;
 
     char spectralSelectionStart;
     char spectralSelectionStop;

@@ -13,6 +13,12 @@ ComponentSOF::ComponentSOF(){}
 
 SOF0::SOF0(){}
 
+
+SOSComponentDescriptor::SOSComponentDescriptor()
+{
+
+}
+
 SOS::SOS()
 {}
 
@@ -146,7 +152,7 @@ void JfifReader::readSOF0(SOF0 &sof0)
 
 void JfifReader::readSOS(SOS &sos)
 {
-    uint2 marker = 0;
+    uint2 marker = 0, len = 0;
 
     read2bytes(_stream, marker);
 
@@ -154,19 +160,30 @@ void JfifReader::readSOS(SOS &sos)
         return;
     }
 
-    char descriptor1 = 0, descriptor2 = 0;
+    read2bytes(_stream, len);
+
+
 
     _stream.read(&sos.componentCount, 1);
-    _stream.read(&descriptor1, 1);
-    _stream.read(&descriptor2, 1);
+
+    sos.componentDescriptors.resize(sos.componentCount);
+
+    for(char i = 0; i < sos.componentCount; i++){
+        SOSComponentDescriptor descriptor;
+          char descriptor1 = 0, descriptor2 = 0;
+          _stream.read(&descriptor1, 1);
+          _stream.read(&descriptor2, 1);
+
+          descriptor.componentIdentifier  = descriptor1;
+          descriptor.acHuffmanTable =  (descriptor2 & 0x0F);
+          descriptor.dcHuffmanTable = (descriptor2 & 0xF0) >> 4;
+    }
+
 
     _stream.read(&sos.spectralSelectionStart, 1);
     _stream.read(&sos.spectralSelectionStop, 1);
     _stream.read(&sos.succesiveApproximation, 1);
 
-    sos.componentIdentifier = descriptor1;
-    sos.dcHuffmanTable = (descriptor2 & 0xF0) >> 4;
-    sos.acHuffmanTable = (descriptor2 & 0x0F);
 
 
 }
@@ -292,9 +309,9 @@ void JfifReader::read()
 
 
     this->readSOF0(this->_sof0);
-
-
     this->readDHT(this->_dhts);
+
+    this->readSOS(this->_sos);
 
 
 
@@ -379,3 +396,4 @@ DHT::DHT()
 {
 
 }
+
