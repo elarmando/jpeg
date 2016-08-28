@@ -40,14 +40,12 @@ public:
      //descriptor
     std::vector<SOSComponentDescriptor> componentDescriptors;
 
-   // char componentIdentifier;
-   // char dcHuffmanTable;
-   // char acHuffmanTable;
-
     char spectralSelectionStart;
     char spectralSelectionStop;
 
     char succesiveApproximation;
+
+    std::vector<char> dataScan;
 };
 
 class DHT{

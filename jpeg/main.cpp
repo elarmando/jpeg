@@ -116,7 +116,7 @@ void testReadHeader(){
     std::string pathImage("test.jpg");
 
     try{
-        std::system("cd");
+
         JfifReader reader(pathImage);
 
         reader.read();

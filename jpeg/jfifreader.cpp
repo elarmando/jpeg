@@ -185,6 +185,32 @@ void JfifReader::readSOS(SOS &sos)
     _stream.read(&sos.succesiveApproximation, 1);
 
 
+    auto initilPos = _stream.tellg();
+    size_t lenData = 0;
+
+    uint2 newmarker = 0xFF00;
+     read2bytes(_stream, newmarker);
+
+    while(!JpegMarker::isMarker(newmarker) || JpegMarker::isRST(newmarker)){//itera mientras no sea un marcador o si es Restart marker
+        lenData+=2;
+
+        read2bytes(_stream, newmarker);
+
+    }
+
+
+
+    if(len > 0){
+        sos.dataScan.resize(lenData);
+
+        _stream.seekg(initilPos);
+        _stream.read(&sos.dataScan[0], lenData);
+    }else{
+        sos.dataScan.resize(0);
+        _stream.seekg(-2,std::ios_base::cur);
+    }
+
+
 
 }
 
