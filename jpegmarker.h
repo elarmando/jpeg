@@ -20,6 +20,9 @@ public:
     const static uint2 SOS = 0xFFDA;
 
     static bool isAPP(uint2 marker);
+    static bool isRST(uint2 marker);
+
+    static bool isMarker(uint2 marker);
 
 };
 
