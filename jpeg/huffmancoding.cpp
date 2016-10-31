@@ -4,6 +4,7 @@
 #include <iostream>
 #include <limits>
 #include <algorithm>
+#include <limits>
 
 HuffmanSymbol::HuffmanSymbol(char _symbol, int _codeLength):
 
@@ -176,17 +177,61 @@ void HuffmanCoding::generateCodes(vector<HuffmanSymbol> &codelen, bool order )
     }
 
 }
+void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream){
+
+	std::vector<HuffmanSymbol> simbols;
+
+
+	for(size_t i = 0; i < simbols.size(); i++){
+		size_t count = (unsigned char)countHuffman[i];
+
+		for(size_t j = 0; j < count; j++){
+				HuffmanSymbol symbol;
+				symbol.codeLength = i + 1;
+				simbols.push_back(symbol);
+		}
+	}
+
+	this->generateCodes(simbols, false);
+
+	std::vector<int> maxCode, minCode;
+
+	maxCode.resize(countHuffman.size());
+	minCode.resize(countHuffman.size());
+
+
+	int lowest = std::numeric_limits<int>::min();
+	int highest = std::numeric_limits<int>::max();
+	size_t indexSimbol = 0;
+
+	for(size_t len = 1; len <= maxCode.size(); len++){
+
+		int max = lowest;
+		int min = highest;
+
+		while(simbols[indexSimbol].codeLength == len){
+
+			if(simbols[indexSimbol].code > max)
+				max = simbols[indexSimbol].code;
+
+			if(simbols[indexSimbol].code < min)
+				min = simbols[indexSimbol].code;
+
+
+
+			indexSimbol++;
+		}
+
+	}
+
+
+}
 
 
 
 void HuffmanCoding::generateCodes(){
 
     vector<HuffmanSymbols> lista;
-
     this->generateInitialList(lista);
-
-
-
-
 }
 

@@ -43,6 +43,8 @@ public:
     void generateInitialList(vector<HuffmanSymbols> &e);
     void generateCodes(HuffmanSymbol &simbols);
     void generateCodes();
+
+    void readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream);
 };
 
 #endif // HUFFMANCODING_H
