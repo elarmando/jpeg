@@ -32,6 +32,8 @@ private:
     vector<char> symbols;
     vector<int> frequencies;
 
+    void findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<int> &minOut, std::vector<int> &maxOut);
+
 
 public:
 
@@ -46,11 +48,7 @@ public:
     void generateCodes(HuffmanSymbol &simbols);
     void generateCodes();
 
-<<<<<<< HEAD
     void readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream);
-=======
-
->>>>>>> 72414548558d5944fdc036abbee28b8d72763055
 };
 
 #endif // HUFFMANCODING_H

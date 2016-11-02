@@ -185,11 +185,7 @@ void HuffmanCoding::generateCodes(vector<HuffmanSymbol> &codelen, bool order )
     }
 
 }
-void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream){
 
-<<<<<<< HEAD
-	std::vector<HuffmanSymbol> simbols;
-=======
 void HuffmanCoding::generateCodeLengthsFromCounts(vector<char> &counts, vector<HuffmanSymbol> &outLengths, bool resize)
 {
     if(resize){
@@ -222,8 +218,9 @@ void HuffmanCoding::generateCodeLengthsFromCounts(vector<char> &counts, vector<H
 
 
 }
+void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream){
 
->>>>>>> 72414548558d5944fdc036abbee28b8d72763055
+	std::vector<HuffmanSymbol> simbols;
 
 
 	for(size_t i = 0; i < simbols.size(); i++){
@@ -239,38 +236,48 @@ void HuffmanCoding::generateCodeLengthsFromCounts(vector<char> &counts, vector<H
 	this->generateCodes(simbols, false);
 
 	std::vector<int> maxCode, minCode;
-
 	maxCode.resize(countHuffman.size());
 	minCode.resize(countHuffman.size());
 
+	findMinMax(simbols, maxCode, minCode);
+}
 
+void HuffmanCoding::findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<int> &maxCode, std::vector<int> &minCode){
+
+	size_t indexSimbol = 0;
 	int lowest = std::numeric_limits<int>::min();
 	int highest = std::numeric_limits<int>::max();
-	size_t indexSimbol = 0;
+
 
 	for(size_t len = 1; len <= maxCode.size(); len++){
 
 		int max = lowest;
 		int min = highest;
+		int numSymbolsByLen = 0;
 
-		while(simbols[indexSimbol].codeLength == len){
+		while(symbols[indexSimbol].codeLength == len){
 
-			if(simbols[indexSimbol].code > max)
-				max = simbols[indexSimbol].code;
+			if(symbols[indexSimbol].code > max)
+				max = symbols[indexSimbol].code;
 
-			if(simbols[indexSimbol].code < min)
-				min = simbols[indexSimbol].code;
+			if(symbols[indexSimbol].code < min)
+				min = symbols[indexSimbol].code;
 
 
-
+			numSymbolsByLen++;
 			indexSimbol++;
+			}
+
+		if(numSymbolsByLen <= 0){
+			max = -1;
+			min = -1;
 		}
 
+		maxCode[len - 1] = max;
+		minCode[len - 1] = min;
 	}
 
-
 }
-
 
 
 void HuffmanCoding::generateCodes(){
