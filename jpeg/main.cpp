@@ -8,6 +8,8 @@
 
 #include "jfifreader.h"
 
+#include "huffmancoding.h"
+
 
 
 
@@ -111,6 +113,25 @@
 //       std::cout<<num<<'/n';
 //    });
 //}
+
+void testCodeLenFromCounts(){
+
+    std::vector<char> symbols;
+    std::vector<int> freq;
+
+    HuffmanCoding coding(symbols, freq);
+
+    char counts[6] = {0, 1, 0, 2, 3, 2};
+    std::vector<char> vcounts(counts, std::end(counts));
+    std::vector<HuffmanSymbol> outsimbols;
+
+    coding.generateCodeLengthsFromCounts(vcounts, outsimbols, true);
+
+    for(size_t i = 0; i < outsimbols.size(); i++){
+        std::cout<<i<<" : "<<outsimbols[i].codeLength<<'\n';
+    }
+
+}
 
 void testReadHeader(){
     std::string pathImage("test.jpg");

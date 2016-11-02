@@ -11,6 +11,7 @@ public:
     char symbol;
     int codeLength;
     int code;
+     HuffmanSymbol();
     HuffmanSymbol(char symbol, int codeLenght);
     string toStr();
 
@@ -40,6 +41,7 @@ public:
     long getLowestFreq(vector<HuffmanSymbols> &e, long indexToSkip = -1);
     void generateCodeLengths(vector<HuffmanSymbols> &e);
     void generateCodes(vector<HuffmanSymbol> &, bool order = true);
+    void generateCodeLengthsFromCounts(vector<char> &counts, vector<HuffmanSymbol> &outLengths, bool resize = true);
     void generateInitialList(vector<HuffmanSymbols> &e);
     void generateCodes(HuffmanSymbol &simbols);
     void generateCodes();

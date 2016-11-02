@@ -15,6 +15,14 @@ code(0)
 
 }
 
+ HuffmanSymbol::HuffmanSymbol():
+ symbol('\0'),
+ codeLength(0),
+   code(0)
+ {
+
+ }
+
 string HuffmanSymbol::toStr(){
     stringstream stream;
     stream <<"(" <<symbol <<", " <<codeLength <<")";
@@ -175,6 +183,39 @@ void HuffmanCoding::generateCodes(vector<HuffmanSymbol> &codelen, bool order )
 
 
     }
+
+}
+
+void HuffmanCoding::generateCodeLengthsFromCounts(vector<char> &counts, vector<HuffmanSymbol> &outLengths, bool resize)
+{
+    if(resize){
+        size_t len = 0;
+
+       auto end = counts.end();
+
+       for(auto ite = counts.begin(); ite != end; ite++)
+           len += (unsigned char)(*ite);
+
+        outLengths.resize(len);
+    }
+
+    size_t index = 1;
+    for(size_t i = 1; i < counts.size(); i+=1){
+        unsigned char count = counts[i];
+
+        for(size_t j = 0; j < count; j++){
+            outLengths[index].codeLength = index;
+            index++;
+
+        }
+    }
+
+
+
+
+
+
+
 
 }
 void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream){
