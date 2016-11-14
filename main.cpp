@@ -122,7 +122,14 @@ void testCodeLenFromCounts(){
     HuffmanCoding coding(symbols, freq);
 
     char counts[6] = {0, 1, 0, 2, 3, 2};
-    std::vector<char> vcounts(counts, std::end(counts));
+    std::vector<char> vcounts;
+
+    vcounts.push_back(0);
+    vcounts.push_back(1);
+    vcounts.push_back(0);
+    vcounts.push_back(2);
+    vcounts.push_back(3);
+    vcounts.push_back(2);
     std::vector<HuffmanSymbol> outsimbols;
 
     coding.generateCodeLengthsFromCounts(vcounts, outsimbols, true);
@@ -133,8 +140,28 @@ void testCodeLenFromCounts(){
 
 }
 
+void testReadBits(){
+	char byte1 = 255;
+	char byte2 = 1;
+
+	vector<char> arr;
+
+	arr.push_back(byte2);
+	arr.push_back(byte1);
+
+	vector<char> t1;
+	vector<int> t2;
+	HuffmanCoding a(t1, t2);
+	unsigned long size = arr.size()*8;
+
+	for(unsigned long i = 0; i < size; i++){
+		int bit = a.readBit(i, arr);
+		std::cout<<bit;
+	}
+}
+
 void testReadHeader(){
-    std::string pathImage("test.jpg");
+    /*std::string pathImage("test.jpg");
 
     try{
 
@@ -145,7 +172,9 @@ void testReadHeader(){
 
     }catch(std::exception &e){
         std::cout<<e.what();
-    }
+    }*/
+
+	testReadBits();
 
 
 }

@@ -6,6 +6,8 @@
 
 using namespace std;
 
+
+
 class HuffmanSymbol{
 public:
     char symbol;
@@ -32,7 +34,7 @@ private:
     vector<char> symbols;
     vector<int> frequencies;
 
-    void findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<int> &minOut, std::vector<int> &maxOut);
+    void findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<int> &minOut, std::vector<int> &maxOut, std::vector<int> &firstIndexValue);
 
 
 public:
@@ -48,6 +50,9 @@ public:
     void generateCodes(HuffmanSymbol &simbols);
     void generateCodes();
 
+    int readBit(unsigned long indexBit, vector<char> &stream);
+
+    //void huffman
     void readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream);
 };
 

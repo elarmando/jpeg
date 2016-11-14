@@ -6,6 +6,9 @@
 #include <algorithm>
 #include <limits>
 
+using namespace std;
+
+
 HuffmanSymbol::HuffmanSymbol(char _symbol, int _codeLength):
 
 symbol(_symbol),
@@ -235,27 +238,55 @@ void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char
 
 	this->generateCodes(simbols, false);
 
-	std::vector<int> maxCode, minCode;
+	std::vector<int> maxCode, minCode, firstIndexVal;
 	maxCode.resize(countHuffman.size());
 	minCode.resize(countHuffman.size());
+	firstIndexVal.resize(countHuffman.size());
 
-	findMinMax(simbols, maxCode, minCode);
+
+	findMinMax(simbols, maxCode, minCode, firstIndexVal);
+
+	unsigned long indexBit = 0;
+	unsigned long endBit = 8 * stream.size();
+
+	while(indexBit < endBit){
+
+
+
+	}
+
+
+
 }
 
-void HuffmanCoding::findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<int> &maxCode, std::vector<int> &minCode){
+int HuffmanCoding::readBit(unsigned long indexBit, vector<char> &stream){
+	int bitPos = indexBit % 8;
+	char byte = stream[indexBit / 8];
+
+	return (byte >> (8 - bitPos - 1)) && (0x1);
+}
+
+void HuffmanCoding::findMinMax(std::vector<HuffmanSymbol> &symbols,
+								std::vector<int> &maxCode,
+								std::vector<int> &minCode,
+								vector<int> &firstIndexValue){
 
 	size_t indexSimbol = 0;
 	int lowest = std::numeric_limits<int>::min();
 	int highest = std::numeric_limits<int>::max();
 
 
-	for(size_t len = 1; len <= maxCode.size(); len++){
+	for(int len = 1; len <= maxCode.size(); len++){
 
 		int max = lowest;
 		int min = highest;
 		int numSymbolsByLen = 0;
+		int firstIndex = -1;
 
 		while(symbols[indexSimbol].codeLength == len){
+
+			if(firstIndex == -1)
+				firstIndex = indexSimbol;
 
 			if(symbols[indexSimbol].code > max)
 				max = symbols[indexSimbol].code;
@@ -266,7 +297,7 @@ void HuffmanCoding::findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<
 
 			numSymbolsByLen++;
 			indexSimbol++;
-			}
+		}
 
 		if(numSymbolsByLen <= 0){
 			max = -1;
@@ -275,6 +306,7 @@ void HuffmanCoding::findMinMax(std::vector<HuffmanSymbol> &symbols, std::vector<
 
 		maxCode[len - 1] = max;
 		minCode[len - 1] = min;
+		firstIndexValue[len -1] = firstIndex;
 	}
 
 }
