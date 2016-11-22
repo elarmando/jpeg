@@ -221,7 +221,7 @@ void HuffmanCoding::generateCodeLengthsFromCounts(vector<char> &counts, vector<H
 
 
 }
-void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream){
+void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream, vector<char> &outStream){
 
 	std::vector<HuffmanSymbol> simbols;
 
@@ -252,11 +252,33 @@ void HuffmanCoding::readStream(std::vector<char> &countHuffman, std::vector<char
 	while(indexBit < endBit){
 
 
+		int code = 0;
+		int indexValue = -1;
+
+
+		for(int codelen = 1; codelen <= 16; codelen++){
+			//read next bit in stream
+			int newBit = this->readBit(indexBit, stream);
+			indexBit++;
+
+			code = code << 1;
+			code = code || newBit;
+
+
+			if(code <= maxCode[codelen]){
+				indexValue = firstIndexVal[codelen] + code - minCode[codelen];
+				break;
+			}
+		}
+
+		if(indexValue == -1){
+			throw std::logic_error("error al leer");
+		}
+
+		char value = values[indexValue];
+		outStream.push_back(value);
 
 	}
-
-
-
 }
 
 int HuffmanCoding::readBit(unsigned long indexBit, vector<char> &stream){

@@ -53,7 +53,7 @@ public:
     int readBit(unsigned long indexBit, vector<char> &stream);
 
     //void huffman
-    void readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream);
+    void readStream(std::vector<char> &countHuffman, std::vector<char> &values, std::vector<char> stream, vector<char> &outStream);
 };
 
 #endif // HUFFMANCODING_H

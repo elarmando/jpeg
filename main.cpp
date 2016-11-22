@@ -174,7 +174,7 @@ void testReadHeader(){
         std::cout<<e.what();
     }*/
 
-	testReadBits();
+
 
 
 }
